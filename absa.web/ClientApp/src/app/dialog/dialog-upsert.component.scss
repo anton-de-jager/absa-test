@@ -1,0 +1,41 @@
+.dialog-title {
+  background-color: #039BE5;
+  color: #FFF;
+  margin-left: -24px;
+  margin-right: -24px;
+  margin-top: -24px;
+  margin-bottom: 24px;
+  padding: 10px;
+}
+
+.dialog-footer {
+  background-color: #C5C6CB;
+  margin-left: -24px;
+  margin-right: -24px;
+  margin-top: 24px;
+  margin-bottom: -24px;
+  padding: 10px;
+}
+
+.radio-group {
+  display: inline-flex;
+  flex-direction: column;
+}
+
+.radio-button {
+  margin: 5px;
+}
+
+.selected-value {
+  margin: 15px 0;
+}
+
+.mat-form-field {
+  width: 100%;
+  padding-left: 6px;
+  padding-right: 6px;
+}
+
+.fill-space {
+  flex: 1 1 auto;
+}

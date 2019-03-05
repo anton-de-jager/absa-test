@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.329
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "absa.web", "absa.web\absa.web.csproj", "{102CC1DD-4416-46C6-ADC8-FDD8FA2999DD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{102CC1DD-4416-46C6-ADC8-FDD8FA2999DD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{102CC1DD-4416-46C6-ADC8-FDD8FA2999DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{102CC1DD-4416-46C6-ADC8-FDD8FA2999DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{102CC1DD-4416-46C6-ADC8-FDD8FA2999DD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8644C811-0EE8-4090-B110-2C8467A3F26B}
+	EndGlobalSection
+EndGlobal

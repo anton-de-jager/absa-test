@@ -1,0 +1,46 @@
+<h1 mat-dialog-title class="accent dialog-title">{{formData.title}} Phonebook Item</h1>
+<div mat-dialog-content>
+  <form class="mat-white-bg p-12" fxLayout="column" fxLayoutAlign="start" fxFlex="1 0 auto" name="form" [formGroup]="form"
+        novalidate>
+
+    <mat-grid-list cols="2" rowHeight="65px" class="flex">
+      <mat-grid-tile>
+        <mat-form-field class="mat-form-field">
+          <input matInput placeholder="First Name" formControlName="firstName" id="firstName">
+          <mat-error *ngIf="hasError('firstName', 'required')">First Name is required</mat-error>
+        </mat-form-field>
+      </mat-grid-tile>
+      <mat-grid-tile>
+        <mat-form-field class="mat-form-field">
+          <input matInput placeholder="Last Name" formControlName="lastName" id="lastName">
+          <mat-error *ngIf="hasError('lastName', 'required')">Last Name is required</mat-error>
+        </mat-form-field>
+      </mat-grid-tile>
+      <mat-grid-tile>
+        <mat-form-field class="mat-form-field">
+          <input matInput placeholder="Phone Number" mask='(000) 000-0000' formControlName="phoneNumber" id="phoneNumber">
+          <mat-error *ngIf="hasError('phoneNumber', 'required')">Phone Number is required</mat-error>
+        </mat-form-field>
+      </mat-grid-tile>
+      <mat-grid-tile>
+        <mat-form-field class="mat-form-field">
+          <mat-select placeholder="Image" formControlName="imageUrl" id="imageUrl">
+              <mat-select-trigger>
+                  <img with="15" height="15" style="overflow: hidden" [src]="form.value.imageUrl">
+                </mat-select-trigger>
+            <mat-option *ngFor="let imageItem of imageItems" [value]="imageItem">
+              <img with="40" height="40" [src]="imageItem">
+            </mat-option>
+          </mat-select>
+          <mat-error *ngIf="hasError('imageUrl', 'required')">Image is required</mat-error>
+        </mat-form-field>
+      </mat-grid-tile>
+    </mat-grid-list>
+
+  </form>
+</div>
+<div mat-dialog-actions class="dialog-footer">
+  <span style="flex: 1 1 auto;"></span>
+  <button mat-raised-button color="warn" (click)="onNoClick()">Cancel</button>
+  <button mat-raised-button color="accent" [mat-dialog-close]="form.value" [disabled]="!form.valid">Submit</button>
+</div>
